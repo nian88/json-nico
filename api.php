@@ -12,12 +12,12 @@ $array = array();
 while ($r = mysql_fetch_row($result)) {
     $array[] = $r;
 }
-//$data = "{kota:".json_encode($array)."}";
+$data = "{kota:".json_encode($array)."}";
 
   //--------------------------------------------------------------------------
   // 3) echo result as json 
   //--------------------------------------------------------------------------
-  echo json_encode($array);
-  
+  //echo json_encode($array);
+  echo $data;
 
 ?>
